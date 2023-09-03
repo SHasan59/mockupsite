@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <title>Store Page</title>
+  <link rel="stylesheet" type="text/css" href="css/sh_base.css">
+ <link rel="stylesheet" type="text/css" href="css/sh_store.css">
+   <script src="js/sh_cart.js" async></script>
+    <script src="js/sh_login.js" ></script>
+   
+<div id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit" id="login-btn">Login</button>
+    </div>
+
+    <div id="welcome-message" style="display: none;">
+        <h1 id="welcome-username"></h1>
+    </div>
+<body>
+
+    <header>
+       <img id = "imghead" src="images/SH_Header.png" alt="Custom Cruisers" />
+     <nav class="horizontal"> 
+         <ul>
+            <li><a href="sh_home.html">Home</a></li>
+            <li><a href="sh_events.html">Events</a></li>
+            <li><a href="sh_store.html">Store</a></li>
+            <li><a href="sh_gallery.html">Gallery</a></li>
+            <li><a href="sh_aboutus.html">About Us</a></li>
+        
+           
+         </ul>
+      </nav>
+      </header>
+
+
+<h1>Store</h1>
+        <section id="summary">
+        <h1>ACCS "TISSUE CRATE" ($39.95)</h1>
+        <h2>by <a href="https://misaligned.jp/password">Misa.Jp</a></h2>
+        <img src="images/tissuecrate.png" alt="ACCS TISSUE CRATE" />
+        <p>The ACCS Tissue Crate combines practicality and aesthetics like no other. Forget rummaging through your car for tissues or struggling to find a suitable spot to keep them within reach. With this handy crate, you'll have a ready supply of tissues right at your fingertips whenever you need them, ensuring a clean and comfortable driving experience. Crafted from durable materials, the ACCS Tissue Crate is built to withstand the rigors of daily use. Its compact and sleek design allows for easy placement in various locations within your vehicle, such as the center console, glove compartment, or even attached to the sun visor. No more fumbling around or wasting time searching for tissues when you need them most.</p>
+          <h1>Workshop Flag ($19.99)</h1>
+        <h2>by <a href="https://us.hardtunedstore.com/?gclid=Cj0KCQjwwISlBhD6ARIsAESAmp7VvroAPjZ7QplhTLLou3DU6mM-xwIcqPNTeg23ygJjJPvjAWQ2xfoaAv9JEALw_wcB">HardTuned</a></h2>
+        <img src="images/workshop.png" alt="Workshop Flag" />
+        <p>Crafted with meticulous attention to detail, the Workshop Flag is more than just a decorative item. It's a powerful symbol that embodies the very essence of your passion for cars. As soon as you unfurl this flag, you'll instantly transform your workspace into a haven for automotive excellence. The Workshop Flag features a stunning blend of vibrant colors and striking design elements that pay homage to the iconic symbols of the automotive world. From vintage classics to cutting-edge supercars, this flag captures the spirit of automotive history and innovation in one captivating piece. Don't miss out on the opportunity to own this timeless emblem of automotive pride. Purchase the Workshop Flag today and let it inspire you, invigorate your workspace, and fuel your passion for cars like never before. Celebrate your love for automobiles in all its glory and elevate your car workshop to a whole new level of excellence!</p>
+    </section>
+
+
+    <section id="orderSection">
+        <form id="cart" name="cart" method="get" action="sh_credit.html">
+
+            <table id="cartTable">
+                <caption>Shopping Cart</caption>
+                <tr>
+                    <td>
+                        <label>ACCS Tissue Crate ($39.95)</label>
+                        <input type="hidden" name="modelCost" id="modelCost" value="39.95" />
+                        <input type="hidden" id="modelName" name="modelName" value="ACCS Tissue Crate ($39.95)" />
+                    </td>
+
+                    <td class="rightA">
+                        <label for="modelQty">Qty</label>
+                        <select name="modelQty" id="modelQty">
+                              <option value="0" >0</option>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                    <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                    <option value="10">10</option>
+                 </select>
+                    </td>
+                    <td>
+                        <input type="text" name="orderCost" id="orderCost" size="10" readonly />
+                    </td>
+                </tr>
+                 
+
+
+                  <tr>
+                    <td>
+                        <label>Workshop Flag ($19.99)</label>
+                        <input type="hidden" name="modelCost2" id="modelCost2" value="19.99" />
+                        <input type="hidden" id="modelName2" name="modelName2" value="Workshop Flag" />
+                    </td>
+
+                    <td class="rightA">
+                        <label for="modelQty2">Qty</label>
+                        <select name="modelQty2" id="modelQty2">
+                              <option value="0" >0</option>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                    <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                    <option value="10">10</option>
+                 </select>
+                    </td>
+                    <td>
+                        <input type="text" name="orderCost2" id="orderCost2" size="10" readonly />
+                    </td>
+                </tr>
+
+
+                    <td colspan="2">
+                        <input type="hidden" id="shippingType" name="shippingType" />
+                        <fieldset>
+                            <legend>Shipping (Per Item)</legend>
+                            <label><input type="radio" id="overnight" name="shipping" value="19.99" checked /> Overnight Shipping ($19.99)</label>
+                            <label><input type="radio" id="day_2" name="shipping" value="15.00" /> 2-Day Shipping ($15)</label>
+                            <label><input type="radio" id="ground" name="shipping" value="7.25" /> Economy Shipping ($7.25)</label>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <input type="text" name="shippingCost" id="shippingCost" size="10" readonly />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="rightA">Subtotal</td>
+                    <td class="outcell">
+                        <input type="text" name="subTotal" id="subTotal" size="10" readonly />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="rightA">Tax (8%)</td>
+                    <td>
+                        <input type="text" name="salesTax" id="salesTax" size="10" readonly />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="rightA">TOTAL</td>
+                    <td>
+                        <input type="text" name="cartTotal" id="cartTotal" size="10" readonly />
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" id="buttonAdd" value="Checkout" />
+
+        </form>
+    </section>
+
+  
+     <footer class="footer">
+      | Custom Cruisers &copy; 2023 All Rights Reserved | Samith Hasan |
+   </footer>
+   
+</body>
+
+</html>

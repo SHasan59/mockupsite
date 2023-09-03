@@ -1,0 +1,208 @@
+@charset "utf-8";
+img{
+   display: block;
+   width: 100%;
+}
+
+
+body > nav {
+   width: 20%;
+   float: left;
+   margin: 0 0 0 1.5%;
+}
+
+body > article#about_sh{
+   width: 51%;
+   float: left;
+   margin: 0 3% 0 3%;
+}
+
+
+body > aside {
+   width: 20%;
+   float: left;
+   margin: 0 1.5% 0 0;
+}
+
+
+
+
+html {
+   background-color: #c2dad4;
+
+}
+
+
+h1{
+   color: skyblue;
+   margin-left: auto;
+   background-color: #333;
+   font-family: monospace, arial;  
+}
+
+body{
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 1080px;
+   min-width:640px;
+   font-family: cursive, arial;   
+  background-color: white;
+
+}
+
+
+body > nav {
+   width: 20%;
+   float: left;
+   margin: 0 0 0 1.5%;
+   font-family: sans-serif;
+}
+
+body > article#middle{
+   width: 51%;
+   float: left;
+   margin: 0 3% 0 3%;
+}
+
+
+body > aside {
+   width: 20%;
+   float: left;
+   margin: 0 1.5% 0 0;
+}
+
+
+
+article#about_sh h2{
+   color: #b8d8be;
+   background-color: #333;
+    font-family: monospace, arial;  
+}
+
+ aside{
+   font-family: monospace, arial;  
+ }
+aside > ul{
+   line-height: 2em;
+   list-style-type: none;
+   padding-right: 20px;
+}
+
+aside> ul > li.newgroup{
+   margin-top: 20px;
+}
+
+
+aside>ul>li>a:link, aside>ul>li>a:visited{
+   color: rgb(160,160,160);
+   text-decoration: none;
+}
+
+aside>ul>li>a:hover, aside>ul>li>a:active{
+  color: rgb(151,151,256);
+  text-decoration: underline;
+}
+
+
+nav.horizontal ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  line-height: 3em;
+
+}
+
+nav.horizontal li{
+    float: left;
+    margin: 0px 0px 0px 0px;
+    width: 20%;
+}
+
+nav.horizontal li> a{
+   display: block;
+}
+
+nav.horizontal a {
+   font-family: Champagne, cursive;
+   font-size: 1em;
+   line-height: 3em;
+   text-align: center;
+}  
+
+nav.horizontal a:link, 
+nav.horizontal a:visited {
+   background-color: #4C4E52;
+}
+
+nav.horizontal a:hover, 
+nav.horizontal a:active {
+   background-color: #56739A;
+}
+
+nav.horizontal>ul>li>a:link, nav.horizontal>ul>li>a:visited{
+   color: rgb(151,151,200);
+   text-decoration: none;
+}
+
+nav.horizontal>ul>li>a:hover, nav.horizontal>ul>li>a:active{
+  color: white;
+  text-decoration: underline;
+}
+
+
+
+article#about_sh ul li:first-of-type{
+   list-style-image: url(images/icons8-car-24.png);
+}
+
+article#about_sh ul li:last-of-type{
+   list-style-image: url(images/icons8-car-seat-24.png);
+}
+
+article#about_sh ul li:nth-of-type(2){
+   list-style-image: url(images/icons8-turbo-30.png);
+
+}
+
+article#about_sh ul li:nth-of-type(3){
+   list-style-image: url(images/icons8-wrench-24.png);
+
+}
+
+
+article.syllabus ol{
+   list-style-type: upper-roman;
+}
+
+article.syllabus ol ol{
+   list-style-type: upper-alpha;
+}
+
+
+article.syllabus ol ol ol{
+   list-style-type: decimal;
+}
+
+
+
+body > footer {
+   width: 100%;
+   clear: left;
+    background-color: #4C4E52;
+    color: rgb(151,151,200);
+
+    text-align: center;
+}
+
+
+blockquote{
+   font-size: 0.9em;
+}
+
+
+
+
+
+
+

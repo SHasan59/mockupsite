@@ -1,0 +1,163 @@
+section#summary {
+   -webkit-flex: 1 1 50px;
+   flex: 1 1 50px;
+border-bottom: solid;
+border-bottom-color: skyblue;
+padding: 5px;
+}
+
+section#summary h1 {
+   font-size: 1.5em;
+   letter-spacing: 0.1em;
+   line-height: 1em;
+ color: #b8d8be;
+   
+}
+
+section#summary h2 {
+   font-size: 1em;
+   font-weight: normal;
+}
+
+
+
+section#summary > img {
+   display: block;
+   width: 40%;
+   margin: 0px auto;
+}
+
+section#summary p {
+   font-size: 0.9em;
+   text-align: justify;
+}
+
+section#orderSection {
+   -webkit-flex: 1 1 200px;
+   flex: 1 1 200px;
+   margin: 20px;
+}
+   
+
+
+
+/* bottom*/
+
+
+table#cartTable {
+   margin: 15px;
+   width: 95%;
+   border-collapse: collapse;
+}
+
+form#cart fieldset {
+   border: none;
+   margin-left: -10px;
+}
+
+form#cart input[type="text"] {
+   background-color: rgba(240, 233, 222, 0.5);
+}
+
+table#cartTable caption {
+   font-size: 1.1em;
+   font-weight: bold;
+   letter-spacing: 0.2em;
+   text-align: left;
+   caption-side: top;
+   margin-bottom: 20px;
+}
+
+
+table#cartTable td {
+   height: 30px;
+   vertical-align: top;
+}
+
+
+form#cart input[type="text"] {
+   color: rgb(101, 101, 101);
+}
+
+form#cart select {
+   display: inline-block;
+   margin-left: 10px;
+   color: rgb(101, 101, 101);
+}
+
+
+table#cartTable tr td:last-of-type input {
+   text-align: right;
+   border: none;
+}
+
+table#cartTable tr:nth-of-type(3) {
+   border-bottom: 1px solid rgb(151, 151, 151);
+}
+
+table#cartTable tr:nth-of-type(2) td, table#cartTable tr:nth-of-type(4) td {
+   padding-top: 15px;
+}
+
+table#cartTable tr:nth-of-type(5) td {
+   border-bottom: 6px double rgb(151, 151, 151);
+}
+
+table#cartTable tr:last-of-type td {
+   padding-top: 15px;
+}
+
+table#cartTable td.rightA {
+   text-align: right;
+   padding-right: 10px;
+}
+
+form#cart fieldset label {
+   display: block;
+}
+
+form#cart input#buttonAdd {
+   display: block;
+   width: 120px;
+   height: 35px;
+   margin: 15px auto;
+   background-color: skyblue;
+   font-size: 1.3em;
+   border-radius: 20px;
+   font-family: monospace;
+}
+
+div{
+   background-color: #4C4E52;
+}
+
+div>label{
+   color: white;
+}
+
+h1#welcome-username{
+
+color: skyblue;
+font-size: 1em;
+font-family: cursive;
+}
+
+#login-btn{
+   background-color: skyblue;
+   border-radius: 20px;
+}
+
+p{
+   padding: 10px;
+}
+
+h2{
+   margin: 0px;
+}
+
+h1{
+   padding: 1px;
+   margin: 1px;
+   font-size: 2em;
+}
+
